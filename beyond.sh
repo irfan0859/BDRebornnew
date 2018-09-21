@@ -51,7 +51,7 @@ function logo_play() {
 	echo -e "\e[0m"
 }
 
-function beyondteam() {
+function bfcanal() {
 	echo -e "\e[0m"
 	green "     >>>>                       We Are Not Attacker                             "
 	green "     >>>>                       We Are Not Alliance                             "
