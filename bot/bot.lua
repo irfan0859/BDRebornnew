@@ -1,4 +1,4 @@
--- #Beyond Reborn Robot
+-- #bfcanal Reborn Robot
 -- #@bfcanal
 
 tdcli = dofile('./tg/tdcli.lua')
@@ -94,7 +94,7 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》Beyond Reborn v6.0
+    info_text = [[》bfcanal Reborn v6.0
 An advanced administration bot  
 
 》Admins :
