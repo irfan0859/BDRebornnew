@@ -106,7 +106,7 @@ An advanced administration bot
 》Our channel :
 》@bfcanal《
 
-]],
+,
   }
 	serialize_to_file(config, './data/config.lua')
 	print ('saved config into config.lua')
