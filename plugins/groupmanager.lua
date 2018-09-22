@@ -75,7 +75,7 @@ end
     if not lang then
   return '*Group has been added*'..msg_caption
 else
-  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'..msg_caption
+  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'..bfcanal
 end
 end
 
@@ -204,7 +204,7 @@ local lang = redis:get(hash)
     local i = 1
   if not data[tostring(msg.to.id)] then
 if not lang then
-    return "_Group is not added_"..msg_caption
+    return "_Group is not added_"..bfcanal
 else
 return "گروه به لیست گروه های مدیریتی ربات اضافه نشده است"
   end
@@ -3386,20 +3386,20 @@ if (matches[1]:lower() == "setlang" and not Clang) and is_owner(msg) then
 local hash = "gp_lang:"..msg.to.id
 if matches[2] == "fa" then
 redis:set(hash, true)
-return "*زبان گروه تنظیم شد به : فارسی*"..msg_caption
+return "*زبان گروه تنظیم شد به : فارسی*"..bfcanal
   elseif matches[2] == "en" then
  redis:del(hash)
-return "_Group Language Set To:_ EN"..msg_caption
+return "_Group Language Set To:_ EN"..bfcanal
 end
 end
 if (matches[1] == 'زبان' and Clang) and is_owner(msg) then
 local hash = "gp_lang:"..msg.to.id
 if matches[2] == "فارسی" then
 redis:set(hash, true)
-return "*زبان گروه تنظیم شد به : فارسی*"..msg_caption
+return "*زبان گروه تنظیم شد به : فارسی*"..bfcanal
   elseif matches[2] == "انگلیسی" then
  redis:del(hash)
-return "_Group Language Set To:_ EN"..msg_caption
+return "_Group Language Set To:_ EN"..bfcanal
 end
 end
 
@@ -3408,9 +3408,9 @@ local hash = "cmd_lang:"..msg.to.id
 if matches[2] == "fa" then
 redis:set(hash, true)
    if lang then
-return "*زبان دستورات ربات تنظیم شد به : فارسی*"..msg_caption
+return "*زبان دستورات ربات تنظیم شد به : فارسی*"..bfcanal
 else
-return "_Bot Commands Language Set To:_ Fa"..msg_caption
+return "_Bot Commands Language Set To:_ Fa"..bfcanal
 end
 end
 end
@@ -3419,9 +3419,9 @@ if (matches[1]:lower() == "دستورات انگلیسی" and Clang) and is_owne
 local hash = "cmd_lang:"..msg.to.id
 redis:del(hash)
    if lang then
-return "*زبان دستورات ربات تنظیم شد به : انگلیسی*"..msg_caption
+return "*زبان دستورات ربات تنظیم شد به : انگلیسی*"..bfcanal
 else
-return "_Bot Commands Language Set To:_ EN"..msg_caption
+return "_Bot Commands Language Set To:_ EN"..bfcanal
 end
 end
 
@@ -3735,7 +3735,7 @@ _این به این معناست که فقط مدیران/مالکان گروه 
 _موفق باشید_ *;)*
 ]]
 end
-return text..msg_caption
+return text..bfcanal
 end
 
 if (matches[1] == "راهنما" and Clang) and is_mod(msg) then
@@ -4051,7 +4051,7 @@ _این راهنما فقط برای مدیران/مالکان گروه میبا
 این به این معناست که فقط مدیران/مالکان گروه میتوانند از دستورات بالا استفاده کنند!_
 *موفق باشید ;)*]]
 end
-return text..msg_caption
+return text..bfcanal
 end
 --------------------- Welcome -----------------------
 	if ((matches[1] == "welcome" and not Clang) or (matches[1] == "خوشامد" and Clang)) and is_mod(msg) then
