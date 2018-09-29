@@ -1265,7 +1265,7 @@ if matches[1] == "helptools" and not Clang and is_mod(msg) then
 if not lang then
 text = [[
 
-_Sudoer And Admins Beyond Bot Help :_
+_Sudouser And Admins Bfcanal Bot Help :_
 
 *!visudo* `[username|id|reply]`
 _Add Sudo_
@@ -1368,9 +1368,9 @@ _Leave Bot From Specific Group_
 
 _You can use_ *[!/#]* _at the beginning of commands._
 
-`This help is only for sudoers/bot admins.`
+`This help is only for sudousers/bot admins.`
  
-*This means only the sudoers and its bot admins can use mentioned commands.*
+*This means only the sudousers and its bot admins can use mentioned commands.*
 
 *Good luck ;)*]]..msg_caption
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
@@ -1493,7 +1493,7 @@ if matches[1] == "راهنمای ابزار" and Clang and is_mod(msg) then
 if not lang then
 text = [[
 
-_Sudoer And Admins Beyond Bot Help :_
+_Sudouser And Admins Bfcanal Bot Help :_
 
 *سودو* `[username|id|reply]`
 _Add Sudo_
@@ -1594,9 +1594,9 @@ _Invite You To Specific Group_
 *خروج* `[GroupID]`
 _Leave Bot From Specific Group_
 
-`This help is only for sudoers/bot admins.`
+`This help is only for sudousers/bot admins.`
  
-*This means only the sudoers and its bot admins can use mentioned commands.*
+*This means only the sudousers and its bot admins can use mentioned commands.*
 
 *Good luck ;)*]]
 tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
