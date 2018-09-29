@@ -59,7 +59,7 @@ local function get_weather(location)
 	print("Finding weather in ", location)
 	local BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 	local url = BASE_URL
-	url = url..'?q='..location..'&APPID=eedbc05ba060c787ab0614cad1f2e12b'
+	url = url..'?q='..location..'&APPID=1e2578668e2819f323c443970110491d'
 	url = url..'&units=metric'
 	local b, c, h = http.request(url)
 	if c ~= 200 then return nil end
@@ -235,7 +235,7 @@ local Clang = redis:get(Chash)
       return nil
       else
   local url = "http://tts.baidu.com/text2audio?lan=en&ie=UTF-8&text="..textc
-  local file = download_to_file(url,'BD-Reborn.mp3')
+  local file = download_to_file(url,'Bf-Reborn.mp3')
  				tdcli.sendDocument(msg.to.id, 0, 0, 1, nil, file, msg_caption, dl_cb, nil)
    end
 end
@@ -314,7 +314,7 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not lang then
 helpfun_en = [[
-_Beyond Reborn Fun Help Commands:_
+_Bfcanal Reborn Fun Help Commands:_
 
 *!time*
 _Get time in a sticker_
@@ -406,7 +406,7 @@ local hash = "gp_lang:"..msg.to.id
 local lang = redis:get(hash)
 if not lang then
 helpfun_fa = [[
-_Beyond Reborn Fun Help Commands:_
+_Bfcanal Reborn Fun Help Commands:_
 
 *ساعت*
 _Get time in a sticker_
