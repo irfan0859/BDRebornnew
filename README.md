@@ -21,15 +21,15 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/BeyondTeam/BDReborn.git
-cd BDReborn
+git clone https://github.com/irfan0859/BDRebornnew.git
+cd BDRebornnew
 chmod +x beyond.sh
 ./beyond.sh install
 ./beyond.sh 
 # Enter a phone number & confirmation code.
 
 # For Auto Launch:
-cd BDReborn
+cd BDRebornnew
 chmod 777 autobd.sh
 screen ./autobd.sh
 ```
